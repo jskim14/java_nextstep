@@ -37,7 +37,7 @@ public class LoginHandler  extends Thread{
                             .replace("/", "")
                             .replace(".do" ,"");
                     body = Objects.requireNonNull(
-                                    IndexHTMLHandler.class
+                                    LoginHandler.class
                                             .getResourceAsStream("/templates/user/" + screenName + ".html"))
                             .readAllBytes();
                 }

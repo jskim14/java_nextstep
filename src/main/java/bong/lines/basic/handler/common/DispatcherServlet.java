@@ -19,7 +19,8 @@ public class DispatcherServlet implements Runnable {
 
     @Override
     public void run() {
-        try(InputStream in = connection.getInputStream(); OutputStream out = connection.getOutputStream()) {
+        try(InputStream in = connection.getInputStream();
+            OutputStream out = connection.getOutputStream()) {
             HandlerMapping handlerMapping = new GetMapping(in, out);
             handlerMapping.process();
         }catch (Exception exception){
