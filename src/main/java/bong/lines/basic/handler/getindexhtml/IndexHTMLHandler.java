@@ -30,7 +30,6 @@ public class IndexHTMLHandler extends Thread{
 
             do {
                 line = bufferedReader.readLine();
-
                 if(line != null && line.contains("GET") && line.contains(".html")){
                     String screenName = line.split(" ")[1];
                     body = Objects.requireNonNull(

@@ -16,8 +16,8 @@ public class GetScreen implements LinesGet<Object>{
         String screenName = queryContent.split(" ")[1];
         try {
             return Objects.requireNonNull(
-                            IndexHTMLHandler.class
-                                    .getResourceAsStream("/templates" + screenName))
+                            GetScreen.class
+                                    .getResourceAsStream("/templates/user/" + screenName))
                     .readAllBytes();
         } catch (Exception exception) {
             throw new RuntimeException(exception);
