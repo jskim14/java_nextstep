@@ -27,7 +27,7 @@ public class GetQueryString implements LinesGet<Object>{
         String[] request_args = requestContent.split(" ");
 
         if(!request_args[URI].contains("?"))
-            return "ERROR";
+            return "주소확인";
 
         String[] url_and_queryString = request_args[URI].split("\\?");
 
@@ -36,6 +36,8 @@ public class GetQueryString implements LinesGet<Object>{
 
         if(!url_and_queryString[QEURYSTRING].contains("&") && !url_and_queryString[QEURYSTRING].contains("="))
             return "ERROR";
+
+
 
         String[] queryString = url_and_queryString[QEURYSTRING].split("&");
 

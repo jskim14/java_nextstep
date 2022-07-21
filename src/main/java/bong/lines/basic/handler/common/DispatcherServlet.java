@@ -1,12 +1,7 @@
 package bong.lines.basic.handler.common;
 
-import bong.lines.basic.handler.common.mapping.DeleteMapping;
-import bong.lines.basic.handler.common.mapping.GetMapping;
 import bong.lines.basic.handler.common.mapping.PostMapping;
-import bong.lines.basic.handler.common.mapping.PutMapping;
 import bong.lines.basic.handler.common.mapping.mapper.HandlerMapping;
-import bong.lines.basic.handler.common.mapping.mapper.TypeHandling;
-import bong.lines.basic.handler.common.method.HTTP_METHOD;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.InputStream;
@@ -27,21 +22,26 @@ public class DispatcherServlet implements Runnable {
         try(InputStream in = connection.getInputStream();
             OutputStream out = connection.getOutputStream()) {
 
+//            String requestType = new TypeHandling(in, out).process().split(" ")[0];
+//            HTTP_METHOD httpMethod = HTTP_METHOD.of(requestType);
+
             HandlerMapping handlerMapping = null;
-            String requestType = new TypeHandling(in, out).process().split(" ")[0];
-            HTTP_METHOD httpMethod = HTTP_METHOD.of(requestType);
+//            switch (httpMethod) {
+//                case GET:
+//                    handlerMapping = new GetMapping(in, out);
+//                    break;
+//                case POST:
+//                    handlerMapping = new PostMapping(in, out);
+//                    break;
+//                case PUT:
+//                    handlerMapping = new PutMapping(in, out);
+//                    break;
+//                case DELETE:
+//                    handlerMapping = new DeleteMapping(in, out);
+//                    break;
+//            }
 
-            switch (httpMethod) {
-                case GET:
-                    handlerMapping = new GetMapping(in, out);
-                case POST:
-                    handlerMapping = new PostMapping(in, out);
-                case PUT:
-                    handlerMapping = new PutMapping(in, out);
-                case DELETE:
-                    handlerMapping = new DeleteMapping(in, out);
-            }
-
+            handlerMapping = new PostMapping(in, out);
             handlerMapping.process();
 
         }catch (Exception exception){

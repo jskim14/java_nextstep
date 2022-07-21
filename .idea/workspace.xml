@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b1ae667-29fa-495a-84de-3adc92044cb0" name="Changes" comment="로그인핸들러 수정">
-      <change afterPath="$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/mapping/mapper/TypeHandling.java" afterDir="false" />
+    <list default="true" id="9b1ae667-29fa-495a-84de-3adc92044cb0" name="Changes" comment="TypeHandling.java 생성하고 DispatcherServlet.java 에서 메소드타입을 구분할 수 있도록 변경">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/DispatcherServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/code/TYPE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/code/TYPE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/method/HTTP_METHOD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/method/HTTP_METHOD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/factory/PostFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/factory/PostFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/factory/operation/GetQueryString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/factory/operation/GetQueryString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/factory/operation/PostJsonBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/factory/operation/PostJsonBody.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/mapping/PostMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/mapping/PostMapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/loginform.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/loginform.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +40,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -55,12 +59,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/ideaProject/java_nextstep",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RunManager">
@@ -94,8 +100,17 @@
       <workItem from="1658053090252" duration="97000" />
       <workItem from="1658053219280" duration="2672000" />
       <workItem from="1658102474069" duration="2652000" />
-      <workItem from="1658324256770" duration="4506000" />
+      <workItem from="1658324256770" duration="4664000" />
+      <workItem from="1658403250316" duration="3630000" />
     </task>
+    <task id="LOCAL-00001" summary="TypeHandling.java 생성하고 DispatcherServlet.java 에서 메소드타입을 구분할 수 있도록 변경">
+      <created>1658328856815</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1658328856815</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +127,10 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="TypeHandling.java 생성하고 DispatcherServlet.java 에서 메소드타입을 구분할 수 있도록 변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="TypeHandling.java 생성하고 DispatcherServlet.java 에서 메소드타입을 구분할 수 있도록 변경" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -119,11 +138,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/getloginhtml/LoginHandler.java</url>
           <line>32</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/DispatcherServlet.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/mapping/mapper/HandlerMapping.java</url>
@@ -157,8 +171,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/DispatcherServlet.java</url>
-          <line>30</line>
+          <line>24</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/DispatcherServlet.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
