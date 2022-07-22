@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b1ae667-29fa-495a-84de-3adc92044cb0" name="Changes" comment="TypeHandling.java 생성하고 DispatcherServlet.java 에서 메소드타입을 구분할 수 있도록 변경">
+    <list default="true" id="9b1ae667-29fa-495a-84de-3adc92044cb0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/DispatcherServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/factory/PostFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/factory/PostFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/factory/operation/GetQueryString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/factory/operation/GetQueryString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/factory/operation/PostJsonBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/factory/operation/PostJsonBody.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/mapping/PostMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/mapping/PostMapping.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/loginform.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/loginform.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +40,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -57,18 +57,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/ideaProject/java_nextstep",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
   <component name="RunManager">
     <configuration name="WebServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bong.lines.basic.WebServer" />
@@ -171,12 +165,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/DispatcherServlet.java</url>
-          <line>24</line>
+          <line>31</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/DispatcherServlet.java</url>
-          <line>44</line>
+          <line>51</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
