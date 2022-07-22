@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b1ae667-29fa-495a-84de-3adc92044cb0" name="Changes" comment="">
+    <list default="true" id="9b1ae667-29fa-495a-84de-3adc92044cb0" name="Changes" comment="todo 정리">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bong/lines/basic/handler/common/DispatcherServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/loginform.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/loginform.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,10 +58,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
     <configuration name="WebServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -96,6 +99,7 @@
       <workItem from="1658102474069" duration="2652000" />
       <workItem from="1658324256770" duration="4664000" />
       <workItem from="1658403250316" duration="3630000" />
+      <workItem from="1658456196593" duration="556000" />
     </task>
     <task id="LOCAL-00001" summary="TypeHandling.java 생성하고 DispatcherServlet.java 에서 메소드타입을 구분할 수 있도록 변경">
       <created>1658328856815</created>
@@ -104,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658328856815</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="todo 정리">
+      <created>1658455857850</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1658455857850</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,7 +134,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="TypeHandling.java 생성하고 DispatcherServlet.java 에서 메소드타입을 구분할 수 있도록 변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="TypeHandling.java 생성하고 DispatcherServlet.java 에서 메소드타입을 구분할 수 있도록 변경" />
+    <MESSAGE value="todo 정리" />
+    <option name="LAST_COMMIT_MESSAGE" value="todo 정리" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
